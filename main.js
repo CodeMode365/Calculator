@@ -1,9 +1,12 @@
-const numericButn=Array.from(document.querySelectorAll('.numeric-button'));
-console.log(numericButn)
+const numericButn=Array.from(document.querySelectorAll('.num'));
+const functionalButton=Array.from(document.querySelectorAll('.fun'));
+
+const ArraySotre = [...numericButn,...functionalButton]
+console.log(ArraySotre)
 // console.log(screenTxt)
 // const screenTxt = document.querySelector('.screen-text').innerText;
 
-numericButn.forEach((currEle)=>{
+ArraySotre.forEach((currEle)=>{
     currEle.addEventListener('click', ()=>{
         //to be executed when equel to is pressed
 // const screenTxt = Number(document.querySelector('.screen-text').innerHTML);
@@ -14,9 +17,16 @@ numericButn.forEach((currEle)=>{
 // const screenValue = document.getElementById('value');
 
 // screenValue.innerText=NewValue;
+// console.log('working')
+// console.log(currEle.innerHTML)
 
-const screenTxt = Number(document.querySelector('.screen-text').innerHTML);
-console.log('')
+
+//To add character on screen when clicked
+const screenTxt = document.querySelector('.screen-text').innerHTML;
+const screenValue = document.getElementById('value');
+const clickedChar = currEle.innerHTML;
+const finalText = screenTxt+clickedChar;
+screenValue.innerHTML=finalText
 
 })
 })
