@@ -1,6 +1,7 @@
 const numericButn=Array.from(document.querySelectorAll('.num'));
 const functionalButton=Array.from(document.querySelectorAll('.fun'));
 
+alert("This project is current on development process")
 const ArraySotre = [...numericButn,...functionalButton]
 console.log(ArraySotre)
 // console.log(screenTxt)
