@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.calculator-body{
+width: 400px;
+height: 500px;
+background-color: gray;
+position:absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border-radius: 10px;
+}
+.screen{
+    background-color: rgba(255, 248, 248, 0.881);
+    color: white;
+    width: 90%;
+    /* width: 360px; */
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.buttons{
+    border: 2px solid black;
+    position: absolute;
+    top: 130px;
+    width: 90%;
+    left: 20px;
+    height: 65%;
+}
