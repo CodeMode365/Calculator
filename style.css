@@ -6,6 +6,14 @@
 body{
     background-color: rgba(0, 0, 0, 0.901);
 }
+h2{
+    position: absolute;
+    top: -80px;
+    font-size: 30px;
+    color: wheat;
+    margin-left: 25px;
+    text-align: center;
+}
 .calculator-body{
 width: 400px;
 height: 500px;
