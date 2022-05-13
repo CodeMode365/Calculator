@@ -22,17 +22,25 @@ ArraySotre.forEach((currEle) => {
             screenValue.innerHTML = '';
         }
         if(clickedChar == '='){
-            // let TOdelChar=clickedChar.replace(clickedChar.length-1, clickedChar.length);
-            // clickedChar=clickedChar-TOdelChar;
-            // clickedChar='';
-            // console.log(TOdelChar)
+            let dataStore=screenValue.innerHTML;
+            screenValue.innerHTML=dataStore.slice(0,dataStore.length-1);
+            console.log((screenValue.innerHTML))
+            console.log(typeof(screenValue.innerHTML))
+            const ToPrint =Number(screenValue.innerHTML)
+            const result = document.getElementById('result');
+            console.log(ToPrint)
+            console.log(ToPrint.T)
+            result.innerHTML=ToPrint;
+
+
         }
+
         if(clickedChar =='Del'){
             // console.log(screenValue)
             let dataStore=screenValue.innerHTML;
             screenValue.innerHTML=dataStore.slice(0,dataStore.length-4);
             console.log()
-            if(screenValue.innerHTML==''){
+            if(screenValue.innerHTML=='' && currEle.innerHTML =='Del'){
                 screenValue.innerHTML='';
             }
         }
