@@ -25,8 +25,19 @@ ArraySotre.forEach((currEle) => {
             // let TOdelChar=clickedChar.replace(clickedChar.length-1, clickedChar.length);
             // clickedChar=clickedChar-TOdelChar;
             // clickedChar='';
-            console.log(TOdelChar)
+            // console.log(TOdelChar)
         }
+        if(clickedChar =='Del'){
+            // console.log(screenValue)
+            let dataStore=screenValue.innerHTML;
+            screenValue.innerHTML=dataStore.slice(0,dataStore.length-4);
+            console.log()
+            if(screenValue.innerHTML==''){
+                screenValue.innerHTML='';
+            }
+        }
+       
+
     
     })
 })
